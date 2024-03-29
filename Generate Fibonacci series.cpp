@@ -1,10 +1,15 @@
 #include<iostream>
 using namespace std;
- int n;
-int i=1;
-int sum = 0;
-cout<<"Enter Number:";
-cin>>n;
-while(i<=n){
-    sum=sum+i;
-    i=i+1;
+int main(){
+int n=10,i;// fabonacci series
+int a = 0;
+int b = 1;
+
+for ( i = 1; i <=n; i++)
+{
+    int nextnum=a+b;
+    cout<<nextnum<<" ";
+    a=b;
+    b=nextnum;
+}
+}
